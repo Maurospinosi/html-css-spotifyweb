@@ -23,6 +23,9 @@ a{
   .pad-lr{
     padding:0 20px;
   }
+  .main-top{
+    width: 90%;
+  }
 }
 @media all and (min-width: 993px) and (max-width: 1200px){
   .aside{
@@ -34,6 +37,9 @@ a{
   .pad-lr{
     padding:0 20px;
   }
+  .main-top{
+    width: 88%;
+  }
 }
 @media screen and (min-width: 769px) and (max-width: 992px){
   .aside{
@@ -44,6 +50,9 @@ a{
   }
   .pad-lr{
     padding:0 20px;
+  }
+  .main-top{
+    width: 80%;
   }
 }
 @media screen and (max-width: 768px){
@@ -62,6 +71,9 @@ a{
   .jhon hr{
     display: none;
   }
+  .main-top{
+    width: 80%;
+  }
 }
 /* MIX */
 
@@ -77,9 +89,15 @@ a{
   float: left;
   position: relative;
 }
+.aside-list li{
+  padding-top: 5px;
+}
 .aside-list-two{
   height: 40%;
   overflow-y: auto;
+}
+.aside-list-two li{
+  padding-top: 5px;
 }
 .jhon{
   position: absolute;
@@ -95,6 +113,25 @@ a{
   height: calc(100vh - 100px);
   background-color: black;
   float: left;
+}
+.main-top{
+  height: 100px;
+  position: fixed;
+  top:0;
+  right: 0;
+  z-index: 1;
+  background-color: lightgrey;
+}
+.main-top-buttom{
+  vertical-align: middle;
+  line-height: 100px;
+  float: right;
+  padding-right: 20px;
+}
+.main-top-buttom a{
+  border: 1px solid white;
+  padding: 20px;
+  border-radius: 30%;
 }
 /* Main */
 
