@@ -10,12 +10,18 @@ ul{
 a{
   text-decoration: none;
 }
+.pad-tb{
+  padding:20px 0;
+}
 @media all and (min-width: 1201px){
   .aside{
     width: 10%;
   }
   .main{
     width: 90%;
+  }
+  .pad-lr{
+    padding:0 20px;
   }
 }
 @media all and (min-width: 993px) and (max-width: 1200px){
@@ -25,6 +31,9 @@ a{
   .main{
     width: 88%;
   }
+  .pad-lr{
+    padding:0 20px;
+  }
 }
 @media screen and (min-width: 769px) and (max-width: 992px){
   .aside{
@@ -33,6 +42,9 @@ a{
   .main{
     width: 80%;
   }
+  .pad-lr{
+    padding:0 20px;
+  }
 }
 @media screen and (max-width: 768px){
   .aside{
@@ -40,6 +52,15 @@ a{
   }
   .main{
     width: 80%;
+  }
+  .pad-lr{
+    padding:0 10px;
+  }
+  .aside-list-two{
+    display: none;
+  }
+  .jhon hr{
+    display: none;
   }
 }
 /* MIX */
@@ -54,11 +75,11 @@ a{
   height: calc(100vh - 100px);
   background-color: red;
   float: left;
-  padding:0 20px;
   position: relative;
 }
-.aside-list{
-  padding: 20px 0;
+.aside-list-two{
+  height: 40%;
+  overflow-y: auto;
 }
 .jhon{
   position: absolute;
@@ -66,7 +87,6 @@ a{
   left: 0;
   width: 100%;
   background-color: grey;
-  padding:0 20px;
 }
 /*Navbar laterale*/
 
