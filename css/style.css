@@ -4,20 +4,26 @@
   margin: 0;
   padding: 0;
 }
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
 @media all and (min-width: 1201px){
   .aside{
-    width: 15%;
+    width: 10%;
   }
   .main{
-    width: 85%;
+    width: 90%;
   }
 }
 @media all and (min-width: 993px) and (max-width: 1200px){
   .aside{
-    width: 15%;
+    width: 12%;
   }
   .main{
-    width: 85%;
+    width: 88%;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 992px){
@@ -48,6 +54,19 @@
   height: calc(100vh - 100px);
   background-color: red;
   float: left;
+  padding:0 20px;
+  position: relative;
+}
+.aside-list{
+  padding: 20px 0;
+}
+.jhon{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: grey;
+  padding:0 20px;
 }
 /*Navbar laterale*/
 
