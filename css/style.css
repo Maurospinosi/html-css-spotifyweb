@@ -36,6 +36,9 @@ a{
   .main-bottom-list a{
     font-size: 15px;
   }
+  .footer-left-logo{
+    padding-left: 100px;
+  }
 }
 @media all and (min-width: 993px) and (max-width: 1200px){
   .aside{
@@ -56,6 +59,9 @@ a{
   .main-bottom-list a{
     font-size: 15px;
   }
+  .footer-left-logo{
+    padding-left: 80px;
+  }
 }
 @media screen and (min-width: 769px) and (max-width: 992px){
   .aside{
@@ -75,6 +81,9 @@ a{
   }
   .main-bottom-list a{
     font-size: 15px;
+  }
+  .footer-left-logo{
+    padding-left: 70px;
   }
 }
 @media screen and (max-width: 768px){
@@ -101,6 +110,9 @@ a{
   }
   .main-bottom-list a{
     font-size: 15px;
+  }
+  .footer-left-logo{
+    padding-left: 40px;
   }
 }
 /* MIX */
@@ -203,8 +215,11 @@ a{
 .square-two{
   height: 300px;
   width: 300px;
-  background-color: blue;
   position: relative;
+}
+.main-img{
+  height: 300px;
+  width: 300px;
 }
 .main-bottom-h2{
   margin-top:30px;
@@ -221,6 +236,13 @@ a{
 }
 .play{
   display: none;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(0,0,0, 0.5);
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, -50%);
 }
 .fa-play-circle{
   position: absolute;
@@ -228,17 +250,21 @@ a{
   left:50%;
   transform: translate(-50%, -50%);
   font-size: 60px;
+  color:white;
 }
-.square-two:hover{
-  background-color: rgb(0,0,0, 0.5);
-}
-.play:hover{
+
+.square-two:hover .play{
   display: block;
 }
 
 /* Main */
 
 /* Footer */
+.footer:after{
+  content: "";
+  clear: both;
+  display: table;
+}
 .footer{
   height: 100px;
   position: fixed;
@@ -247,5 +273,44 @@ a{
   width: 100%;
   z-index: 1;
   background-color: green;
+}
+.footer-left{
+  margin-left: 20px;
+  margin-top: 20px;
+  width: 33.333333%;
+  float: left;
+}
+.footer-left img{
+  height: 60px;
+  width: 60px;
+}
+.footer-left-text{
+  display: inline-block;
+  font-size: 15px;
+  padding-left: 10px;
+}
+.footer-left-logo{
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 20px;
+}
+.footer-center{
+  float: left;
+  width: 33.333333%;
+  text-align: center;
+}
+.footer-center-play{
+  padding-left: 25px;
+  font-size: 20px;
+  color:white;
+}
+.line{
+  background-color: white;
+  height:3px;
+  height: 100%;
+}
+.footer-right{
+  float: right;
+  width:33.33333333%;
 }
 /* Footer */
