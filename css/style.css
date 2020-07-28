@@ -18,6 +18,9 @@ a{
   margin: 30px 15px;
 }
 @media all and (min-width: 1201px){
+  .logo-small{
+    display: none;
+  }
   .aside{
     width: 10%;
   }
@@ -41,6 +44,9 @@ a{
   }
 }
 @media all and (min-width: 993px) and (max-width: 1200px){
+  .logo-small{
+    display: none;
+  }
   .aside{
     width: 12%;
   }
@@ -64,6 +70,9 @@ a{
   }
 }
 @media screen and (min-width: 769px) and (max-width: 992px){
+  .logo-small{
+    display: none;
+  }
   .aside{
     width: 20%;
   }
@@ -87,6 +96,9 @@ a{
   }
 }
 @media screen and (max-width: 768px){
+  .logo-big{
+    display: none;
+  }
   .aside{
     width: 20%;
   }
@@ -125,6 +137,17 @@ a{
 /*Navbar laterale*/
 .logo{
   height: 100px;
+  padding: 10px;
+}
+
+.logo-small{
+  height: 40px;
+  width:40px;
+}
+.aside-list img{
+  height: 40px;
+  width:40px;
+  vertical-align:middle;
 }
 #padd{
   padding-top:10px;
@@ -252,7 +275,6 @@ a{
   font-size: 60px;
   color:white;
 }
-
 .square-two:hover .play{
   display: block;
 }
@@ -277,7 +299,7 @@ a{
 .footer-left{
   margin-left: 20px;
   margin-top: 20px;
-  width: 33.333333%;
+  width:calc(100%/3);
   float: left;
 }
 .footer-left img{
@@ -288,29 +310,50 @@ a{
   display: inline-block;
   font-size: 15px;
   padding-left: 10px;
+  position: relative;
+  bottom:10px;
 }
 .footer-left-logo{
   display: inline-block;
-  margin-left: 10px;
   font-size: 20px;
+  position: relative;
+  bottom:20px;
 }
 .footer-center{
   float: left;
-  width: 33.333333%;
+  width:calc(100%/3);
   text-align: center;
 }
 .footer-center-play{
   padding-left: 25px;
   font-size: 20px;
   color:white;
+  padding: 10px 0;
 }
 .line{
   background-color: white;
   height:3px;
-  height: 100%;
+  width: 60%;
+  margin: auto;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 10px;
+}
+.footer-center p{
+  display: inline-block;
+  font-size: 10px;
 }
 .footer-right{
-  float: right;
-  width:33.33333333%;
+  float: left;
+  width:calc(100%/3);
+  display: inline-block;
+
+}
+.line-two{
+  background-color: white;
+  height: 3px;
+  width:30%;
+  display: inline-block;
+
 }
 /* Footer */
