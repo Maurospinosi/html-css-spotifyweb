@@ -283,6 +283,10 @@ aside{
   font-weight: 700;
   font-size: 13px;
 }
+#white{
+  color:white;
+  font-weight: 800;
+}
 .aside a :hover{
   color:white;
 }
@@ -420,17 +424,16 @@ aside{
 .footer-left{
   width:calc(100%/3);
   margin-left: 15px;
+  display: flex;
+  align-items:center;
 }
 .footer-left img{
   height: 60px;
   width: 60px;
 }
 .footer-left-text{
-  display: inline-block;
   font-size: 15px;
   padding-left: 10px;
-  position: relative;
-  bottom:10px;
 }
 .footer-left-text h4{
   color: white;
@@ -441,8 +444,6 @@ aside{
 .footer-left-logo{
   display: inline-block;
   font-size: 20px;
-  position: relative;
-  bottom:20px;
   color: rgb(126,126,126);
 }
 .footer-center{
@@ -450,14 +451,15 @@ aside{
   text-align: center;
   color:white;
 }
+.footer-center-play-list{
+  display: flex;
+  justify-content: center;
+}
 .footer-center-play{
   padding-left: 25px;
   font-size: 20px;
   color:white;
   padding: 10px 0;
-}
-.footer-center-play li{
-  display: inline-block;
 }
 .footer-center-play a{
   color: white;
