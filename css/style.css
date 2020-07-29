@@ -141,13 +141,28 @@ a{
 }
 
 .logo-small{
-  height: 40px;
-  width:40px;
+  height: 30px;
+  width:30px;
 }
 .aside-list img{
+  height: 25px;
+  width:25px;
+  vertical-align:middle;
+}
+.small-square{
   height: 40px;
   width:40px;
-  vertical-align:middle;
+  background-color: grey;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+}
+.small-square i{
+  color: black;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
 }
 #padd{
   padding-top:10px;
@@ -282,11 +297,6 @@ a{
 /* Main */
 
 /* Footer */
-.footer:after{
-  content: "";
-  clear: both;
-  display: table;
-}
 .footer{
   height: 100px;
   position: fixed;
@@ -295,12 +305,12 @@ a{
   width: 100%;
   z-index: 1;
   background-color: green;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .footer-left{
-  margin-left: 20px;
-  margin-top: 20px;
   width:calc(100%/3);
-  float: left;
 }
 .footer-left img{
   height: 60px;
@@ -320,7 +330,6 @@ a{
   bottom:20px;
 }
 .footer-center{
-  float: left;
   width:calc(100%/3);
   text-align: center;
 }
@@ -344,7 +353,6 @@ a{
   font-size: 10px;
 }
 .footer-right{
-  float: left;
   width:calc(100%/3);
   display: inline-block;
 
