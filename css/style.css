@@ -456,6 +456,9 @@ aside{
   color:white;
   padding: 10px 0;
 }
+.footer-center-play li{
+  display: inline-block;
+}
 .footer-center-play a{
   color: white;
   font-size: 20px;
