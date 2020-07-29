@@ -18,20 +18,23 @@ a{
   margin: 60px 15px;
 }
 @media all and (min-width: 1201px){
+  aside{
+    width:16%;
+  }
+  .main{
+    width:84%;
+  }
+  .main-top{
+    width:84%;
+  }
+  .main-bottom{
+    width:84%;
+  }
   .logo-small{
     display: none;
   }
-  .aside{
-    width: 16%;
-  }
-  .main{
-    width: 84%;
-  }
   .pad-lr{
     padding:0 20px;
-  }
-  .main-top{
-    width: 84%;
   }
   .main-bottom-list li{
     padding: 20px 0;
@@ -52,20 +55,23 @@ a{
   }
 }
 @media all and (min-width: 993px) and (max-width: 1200px){
+  aside{
+    width:23%;
+  }
+  .main{
+    width:77%;
+  }
+  .main-top{
+    width:77%;
+  }
+  .main-bottom{
+    width:77%;
+  }
   .logo-small{
     display: none;
   }
-  .aside{
-    width: 25%;
-  }
-  .main{
-    width: 75%;
-  }
   .pad-lr{
     padding:0 20px;
-  }
-  .main-top{
-    width: 75%;
   }
   .main-bottom-list li{
     padding: 20px 0;
@@ -86,20 +92,23 @@ a{
   }
 }
 @media screen and (min-width: 769px) and (max-width: 992px){
+  aside{
+    width:24%;
+  }
+  .main{
+    width:76%;
+  }
+  .main-top{
+    width:76%;
+  }
+  .main-bottom{
+    width:76%;
+  }
   .logo-small{
     display: none;
   }
-  .aside{
-    width: 25%;
-  }
-  .main{
-    width: 75%;
-  }
   .pad-lr{
     padding:0 20px;
-  }
-  .main-top{
-    width: 75%;
   }
   .main-bottom-list li{
     padding: 16px 0;
@@ -120,14 +129,20 @@ a{
   }
 }
 @media screen and (max-width: 768px){
-  .logo-big{
-    display: none;
-  }
-  .aside{
-    width: 20%;
+  aside{
+    width:20%;
   }
   .main{
-    width: 80%;
+    width:80%;
+  }
+  .main-top{
+    width:80%;
+  }
+  .main-bottom{
+    width:80%;
+  }
+  .logo-big{
+    display: none;
   }
   .pad-lr{
     padding:0 10px;
@@ -143,9 +158,6 @@ a{
   }
   .jhon span{
     display: none;
-  }
-  .main-top{
-    width: 80%;
   }
   .main-bottom-list li{
     padding: 5px 0;
@@ -166,6 +178,7 @@ a{
   }
 }
 /* MIX */
+
 .all{
   height: 100vh;
 }
@@ -174,6 +187,7 @@ a{
   content: "";
   display: table;
 }
+
 /*Navbar laterale*/
 .logo{
   height: 100px;
@@ -213,17 +227,20 @@ a{
 #padd{
   padding-top:10px;
 }
-.aside{
-  height:calc(100% - 100px);
-  background-color: rgb(0,0,0);
+aside{
+  height: calc(100% - 100px);
   float: left;
+}
+.aside{
+  height:100%;
+  background-color: rgb(0,0,0);
   position: relative;
 }
 .aside-list li{
   padding-top: 5px;
 }
 .aside-list-two{
-  height: 100%;
+  height:80%;
 }
 .playlist{
   height:30%;
@@ -279,9 +296,8 @@ a{
 
 /* Main */
 .main{
-  height: calc(100% - 100px);
+  height:calc(100% - 100px);
   float: left;
-  position: relative;
 }
 .main-top{
   height: 100px;
@@ -299,18 +315,17 @@ a{
 }
 .main-top-buttom a{
   border: 1px solid white;
-  padding: 13px 35px;
+  padding: 13px 30px;
   border-radius: 10%;
   color:white;
   font-size: 16px;
   font-weight: 700;
 }
 .main-bottom{
-  width: 100%;
   position: absolute;
   top:100px;
   overflow-y: auto;
-  height:calc(100% - 100px);
+  height:calc(100% - 200px);
   background-color: rgb(20,25,30);
 }
 .main-bottom h4{
@@ -387,7 +402,6 @@ a{
 .square-two:hover .play{
   display: block;
 }
-
 /* Main */
 
 /* Footer */
@@ -398,7 +412,7 @@ a{
   left:0;
   width: 100%;
   z-index: 1;
-  background-color: green;
+  background-color: rgb(40,40,40);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -417,21 +431,33 @@ a{
   position: relative;
   bottom:10px;
 }
+.footer-left-text h4{
+  color: white;
+}
+.footer-left-text p{
+  color: rgb(126,126,126);
+}
 .footer-left-logo{
   display: inline-block;
   font-size: 20px;
   position: relative;
   bottom:20px;
+  color: rgb(126,126,126);
 }
 .footer-center{
   width:calc(100%/3);
   text-align: center;
+  color:white;
 }
 .footer-center-play{
   padding-left: 25px;
   font-size: 20px;
   color:white;
   padding: 10px 0;
+}
+.footer-center-play a{
+  color: white;
+  font-size: 20px;
 }
 .line{
   background-color: white;
@@ -442,6 +468,9 @@ a{
   vertical-align: middle;
   padding: 0 10px;
 }
+.pause{
+  font-size: 30px;
+}
 .footer-center p{
   display: inline-block;
   font-size: 10px;
@@ -449,7 +478,9 @@ a{
 .footer-right{
   width:calc(100%/3);
   display: inline-block;
-
+}
+.footer-right a{
+  color:white;
 }
 .line-two{
   background-color: white;
