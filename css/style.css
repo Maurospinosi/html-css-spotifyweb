@@ -15,7 +15,7 @@ a{
   padding:20px 0;
 }
 .marg{
-  margin: 30px 15px;
+  margin: 60px 15px;
 }
 @media all and (min-width: 1201px){
   .logo-small{
@@ -38,6 +38,14 @@ a{
   }
   .main-bottom-list a{
     font-size: 15px;
+  }
+  .square-two{
+    height: 250px;
+    width: 250px;
+  }
+  .main-img{
+    height: 250px;
+    width: 250px;
   }
   .footer-left-logo{
     padding-left: 100px;
@@ -65,6 +73,14 @@ a{
   .main-bottom-list a{
     font-size: 15px;
   }
+  .square-two{
+    height: 250px;
+    width: 250px;
+  }
+  .main-img{
+    height: 250px;
+    width: 250px;
+  }
   .footer-left-logo{
     padding-left: 80px;
   }
@@ -90,6 +106,14 @@ a{
   }
   .main-bottom-list a{
     font-size: 15px;
+  }
+  .square-two{
+    height: 250px;
+    width: 250px;
+  }
+  .main-img{
+    height: 250px;
+    width: 250px;
   }
   .footer-left-logo{
     padding-left: 70px;
@@ -128,6 +152,14 @@ a{
   }
   .main-bottom-list a{
     font-size: 15px;
+  }
+  .square-two{
+    height: 200px;
+    width: 200px;
+  }
+  .main-img{
+    height: 200px;
+    width: 200px;
   }
   .footer-left-logo{
     padding-left: 40px;
@@ -182,7 +214,7 @@ a{
   padding-top:10px;
 }
 .aside{
-  height: calc(100%-100px);
+  height:calc(100% - 100px);
   background-color: rgb(0,0,0);
   float: left;
   position: relative;
@@ -191,7 +223,7 @@ a{
   padding-top: 5px;
 }
 .aside-list-two{
-  height: calc(100vh - 200px);
+  height: 100%;
 }
 .playlist{
   height:30%;
@@ -267,8 +299,8 @@ a{
 }
 .main-top-buttom a{
   border: 1px solid white;
-  padding: 13px 30px;
-  border-radius: 15%;
+  padding: 13px 35px;
+  border-radius: 10%;
   color:white;
   font-size: 16px;
   font-weight: 700;
@@ -278,7 +310,7 @@ a{
   position: absolute;
   top:100px;
   overflow-y: auto;
-  height:calc(100vh - 200px);
+  height:calc(100% - 100px);
   background-color: rgb(20,25,30);
 }
 .main-bottom h4{
@@ -306,7 +338,7 @@ a{
 .square{
   display: none;
   background-color: rgb(173,255,47);
-  width: 50%;
+  width: 40%;
   height: 3px;
   margin: auto;
 }
@@ -318,13 +350,7 @@ a{
   flex-wrap: wrap;
 }
 .square-two{
-  height: 250px;
-  width: 250px;
   position: relative;
-}
-.main-img{
-  height: 250px;
-  width: 250px;
 }
 .main-bottom-h2{
   margin-top:50px;
@@ -338,6 +364,7 @@ a{
   margin-left: 15px;
   color:rgb(123,126,130);
   font-size: 13px;
+  padding-top: 10px;
 }
 .play{
   display: none;
