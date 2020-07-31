@@ -1,1 +1,1 @@
-document.getElementyByld('prova').innerHTML = 'Ascoltati di recente'; 
+document.getElementById('prova').innerHTML = 'Ascoltati di recente'; 
